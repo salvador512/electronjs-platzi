@@ -1,6 +1,11 @@
 'use strict'
 
-const { app, BrowserWindow } = require('electron')
+import { app, BrowserWindow } from 'electron'
+import devtools from './devtools'
+
+if (process.env.NODE_ENV === 'development'){
+	devtools()
+}
 
 app.on('before-quit', function () {
 	console.log('Saliendo...')

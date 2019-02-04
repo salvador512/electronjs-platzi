@@ -4,7 +4,7 @@
   "description": "Aplicativo de electron para visualizacion de imagines",
   "main": "index.js",
   "scripts": {
-    "dev":"electron src/index.js",
+    "dev": "cross-env NODE_ENV=development electron src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/salvador512/electronjs-platzi#readme",
   "dependencies": {
-    "electron": "^4.0.4"
+    "cross-env": "^5.2.0",
+    "electron-compile": "^6.4.4"
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "^4.0.0"
   }
 }
