@@ -30,5 +30,5 @@ app.on('ready', function() {
 		app.quit()
 	})
 
-	win.loadURL('http://devdocs.io')
+	win.loadURL(`file://${__dirname}/renderer/index.html`)
 })
